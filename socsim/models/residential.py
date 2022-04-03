@@ -35,11 +35,11 @@ class DcCoupledSystem(ResidentialPVStorageSystem):
                  storage_charging_efficiency: float,
                  inverter_max_power: float,
                  inverter_dc_dc_efficiency: float,
-                 inverter_dc_dc_max_power: float):
+                 storage_max_charging_power: float):
         super().__init__(storage_max_capacity, storage_min_capacity,
                          storage_charging_efficiency, inverter_max_power)
         # max power when PV power is used for battery charging
-        self.inverter_dc_dc_max_power = inverter_dc_dc_max_power
+        self.storage_max_charging_power = storage_max_charging_power
         # inverter efficiency loss between PV and battery charging on the DC/DC side of the inverter
         self.inverter_dc_dc_efficiency = inverter_dc_dc_efficiency
 
@@ -52,7 +52,7 @@ class DcCoupledSystem(ResidentialPVStorageSystem):
         :return: charging power to the battery
         """
         return (
-                min(self.inverter_dc_dc_max_power, pv_power_kw)
+                min(self.storage_max_charging_power, pv_power_kw)
                 * self.inverter_dc_dc_efficiency
                 * self.storage_charging_efficiency
         )
