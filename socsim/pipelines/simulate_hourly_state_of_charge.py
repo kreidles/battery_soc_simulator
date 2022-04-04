@@ -6,7 +6,7 @@ import json
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
 import logging
-from typing import Any, Dict, List
+from typing import List
 from socsim.models.simulation_config import StateOfChargeSimulationConfig, simulation_config_from_text_line
 from socsim.transformers.state_of_charge import SimulateStateOfCharge
 
