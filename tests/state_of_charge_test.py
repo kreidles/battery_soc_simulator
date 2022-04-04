@@ -32,7 +32,7 @@ class TestStateOfChargeSimulation(unittest.TestCase):
         storage_charging_efficiency=0.91,
         inverter_max_power=7.0,
     )
-    power_ts = list(map(json.loads, open('data/power_ts.json')))[0]
+    power_ts = list(map(json.loads, open('data/power_ts.ndjson')))[0]
     x = 1
 
     def test_state_of_charge_dc(self):

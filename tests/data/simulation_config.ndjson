@@ -1,0 +1,3 @@
+{"pv_system_size": 7.2, "target_hour_of_day": 12, "type":  "DC Coupled", "storage_max_capacity":10.0, "storage_min_capacity":2.0, "storage_charging_efficiency":0.98, "inverter_max_power":7.0, "inverter_dc_dc_efficiency":0.95, "storage_max_charging_power":5.0}
+{"pv_system_size": 7.2, "target_hour_of_day": 15, "type":  "DC Coupled", "storage_max_capacity":10.0, "storage_min_capacity":2.0, "storage_charging_efficiency":0.98, "inverter_max_power":7.0, "inverter_dc_dc_efficiency":0.95, "storage_max_charging_power":5.0}
+{"pv_system_size": 7.2, "target_hour_of_day": 17, "type":  "DC Coupled", "storage_max_capacity":10.0, "storage_min_capacity":2.0, "storage_charging_efficiency":0.98, "inverter_max_power":7.0, "inverter_dc_dc_efficiency":0.95, "storage_max_charging_power":5.0}
