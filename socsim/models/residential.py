@@ -46,7 +46,6 @@ class DcCoupledSystem(ResidentialPVStorageSystem):
     def get_charging_power(self, pv_power_kw: float) -> float:
         """
         Calculate the charging power to the battery based on the given PV output in one hour.
-        Since
 
         :param pv_power_kw: Average PV power produced during an 1 hour time window
         :return: charging power to the battery
